@@ -1,0 +1,86 @@
+*{
+    padding:0;
+    margin:0;
+    color:rgb(36, 37, 39);
+}
+body{
+    background-image: url('bg.jpg');
+    background-size: cover;
+    overflow: hidden ;
+}
+
+#background{
+    height:auto;
+    min-width: 400px;
+    width: auto;
+    margin: 10% 10% 0% 10%;
+    background-color: rgba(48, 161, 236, 0.9);
+    z-index: 110;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+   opacity: 0.98;
+   box-shadow:1px 20px 45px 15px rgba(149, 190, 199, 0.705);
+   border-width: 10px;
+   
+}
+#profile{
+    background-color: rgb(255, 0, 0);
+    background-image:url('profile.jpg') ;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 10px 0px 0px 40%;
+    box-shadow:1px 20px 45px 15px rgba(0, 0, 0, 0.89);
+    align-self: center;
+    
+}
+#linklist{
+    background-color: rgb(0, 214, 252);
+    height: auto;
+    min-height: 300px;
+    min-width: 300px;
+    width: auto;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 25px;
+    box-shadow:1px 20px 45px 15px rgba(0, 0, 0, 0.89);
+    
+}
+#Name{
+    padding-left: 30%;
+    padding-top: 30px;
+    height: 50px;
+    min-width: 300px;
+    width: auto;
+    margin: 10px 10px 10% 10px;
+    font-family: 'Times New Roman', Times;
+    font-size: x-large;
+
+}
+.link{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border-radius: 50px;
+    margin: 20px 20px 20px 30px;
+}
+.link img{
+    height: 100px;
+    border-radius: 50px;
+    box-shadow:1px 20px 45px 15px rgba(0, 0, 0, 0.89);
+}
+#web img{
+    height: 80px;
+    border-radius: 50px;
+    margin-top: 10px;
+    
+}
+/*  -webkit-filter: blur(3px); /* Webkit browsers (Chrome, Safari) 
+-moz-filter: blur(3px); /* Firefox 
+-o-filter: blur(3px); /* Opera 
+-ms-filter: blur(3px); /* Microsoft Edge 
+filter: blur(3px); /* Standard syntax 
+ */
