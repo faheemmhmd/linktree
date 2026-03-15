@@ -533,11 +533,21 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow: auto;
+        min-height: 100vh;
+        display: block;
+        padding-bottom: 20px;
+    }
+
     .container {
         flex-direction: column;
         height: auto;
-        min-height: 100vh;
+        min-height: auto;
         max-width: 100%;
+        overflow: visible;
+        margin: 0 auto;
+    }
     }
 
     .carousel-section {
@@ -545,6 +555,7 @@ body {
         width: 100%;
         padding: 20px;
         gap: 15px;
+        overflow: visible;
     }
 
     .profile-container {
@@ -585,6 +596,9 @@ body {
 
     .cards-wrapper {
         min-height: 380px;
+        overflow: visible;
+        flex: none;
+        height: auto;
     }
 
     .profile-section {
