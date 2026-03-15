@@ -3,44 +3,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <link rel="stylesheet"  href="style.css" >
+    <meta name="description" content="Faheem's social media links, games, projects, and creative portfolio">
+    <title>Faheem - Social Links & Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <div id="background" >
-            <div id="profile">
-                    
+    <div class="container">
+        <!-- LEFT: PROFILE SECTION (25%) -->
+        <div class="profile-container">
+            <div class="profile-circle">
+                <img class="profile-img" src="profile.jpg" alt="Profile">
             </div>
-            <div id="Name">
-                    <h2>@faheemmhmd_</h2>
-            </div>
-            <div id="linklist">
-                <div  class="link" id="youtube">
-                    <a href="https://www.youtube.com/@nexaquest" target="_blank"><img  src="youtube.png"></a>
-                    
+            <h1 class="profile-name">@faheemmhmd_</h1>
+            <p class="profile-bio">Creative developer passionate about building beautiful digital experiences and sharing knowledge.</p>
+
+            <div class="profile-section">
+                <h3 class="section-title">Skills</h3>
+                <div class="skill-item">
+                    <span>HTML/CSS</span>
+                    <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
                 </div>
-                <div  class="link" id="instagram">
-                    <a href="https://www.instagram.com/faheemmhmd_/" target="_blank"><img src="instagram.png"></a>
-                    
+                <div class="skill-item">
+                    <span>JavaScript</span>
+                    <div class="progress-bar"><div class="progress" style="width: 88%"></div></div>
                 </div>
-                <div  class="link" id="x.">
-                    <a href="https://x.com/faheemmhmd_" target="_blank"><img src="x.png"></a>
-                    
-                </div>
-                <div  class="link" id="github">
-                    <a href="https://github.com/faheemmhmd" target="_blank"><img src="github.png"></a>
-                    
-                </div>
-                <div  class="link" id="facebook">
-                    <a href="https://www.facebook.com/faheemmhmd09" target="_blank"><img src="facebook.png"></a>
-                    
-                </div>
-                <div  class="link" id="web">
-                    <a href="https://writeupnotes.blogspot.com/" target="_blank"><img src="web.png"></a>
-                    
+                <div class="skill-item">
+                    <span>Design</span>
+                    <div class="progress-bar"><div class="progress" style="width: 92%"></div></div>
                 </div>
             </div>
 
+            <div class="profile-section">
+                <h3 class="section-title">Stats</h3>
+                <div class="stat-row">
+                    <span class="stat-label">Projects</span>
+                    <span class="stat-value">50+</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Followers</span>
+                    <span class="stat-value">2K+</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Experience</span>
+                    <span class="stat-value">3+ yrs</span>
+                </div>
+            </div>
         </div>
+
+        <!-- RIGHT: CAROUSEL SECTION (75%) -->
+        <div class="carousel-section">
+            <div class="categories-toggle">
+                <button class="toggle-btn active" data-category="social">🌐 Social</button>
+                <button class="toggle-btn" data-category="coding">💻 Coding</button>
+                <button class="toggle-btn" data-category="games">🎮 Games</button>
+                <button class="toggle-btn" data-category="portfolio">🎨 Design</button>
+            </div>
+
+            <div class="wheel-wrapper cards-wrapper">
+                <!-- Social Wheel -->
+                <div class="wheel cards-wheel active" data-category="social">
+                    <div class="card social-card">
+                        <img class="card-image" src="youtube.png" alt="YouTube">
+                        <h3>YouTube</h3>
+                        <p class="handle">@faheemmhmd_</p>
+                        <div class="stats">
+                            <div class="stat">24K<br><small>Subscribers</small></div>
+                            <div class="stat">701K<br><small>Views</small></div>
+                        </div>
+                        <a href="https://youtube.com/@faheemmhmd_" target="_blank" class="btn">Visit</a>
+                    </div>
+                    <div class="card social-card">
+                        <img class="card-image" src="instagram.png" alt="Instagram">
+                        <h3>Instagram</h3>
+                        <p class="handle">@faheemmhmd_</p>
+                        <div class="stats">
+                            <div class="stat">5.2K<br><small>Followers</small></div>
+                            <div class="stat">342<br><small>Posts</small></div>
+                        </div>
+                        <a href="https://instagram.com/faheemmhmd_" target="_blank" class="btn">Follow</a>
+                    </div>
+                    <div class="card social-card">
+                        <img class="card-image" src="x.png" alt="X/Twitter">
+                        <h3>X/Twitter</h3>
+                        <p class="handle">@faheemmhmd_</p>
+                        <div class="stats">
+                            <div class="stat">1.8K<br><small>Followers</small></div>
+                            <div class="stat">856<br><small>Tweets</small></div>
+                        </div>
+                        <a href="https://twitter.com/faheemmhmd_" target="_blank" class="btn">Follow</a>
+                    </div>
+                    <div class="card social-card">
+                        <img class="card-image" src="linkedin.png" alt="LinkedIn">
+                        <h3>LinkedIn</h3>
+                        <p class="handle">Faheem Mohd</p>
+                        <div class="stats">
+                            <div class="stat">500+<br><small>Connections</small></div>
+                            <div class="stat">45<br><small>Endorsements</small></div>
+                        </div>
+                        <a href="https://linkedin.com/in/faheemmohd" target="_blank" class="btn">Connect</a>
+                    </div>
+                    <div class="card social-card">
+                        <img class="card-image" src="tiktok.png" alt="TikTok">
+                        <h3>TikTok</h3>
+                        <p class="handle">@faheemmhmd_</p>
+                        <div class="stats">
+                            <div class="stat">12K<br><small>Followers</small></div>
+                            <div class="stat">450K<br><small>Likes</small></div>
+                        </div>
+                        <a href="https://tiktok.com/@faheemmhmd_" target="_blank" class="btn">Follow</a>
+                    </div>
+                    <div class="card social-card">
+                        <img class="card-image" src="discord.png" alt="Discord">
+                        <h3>Discord</h3>
+                        <p class="handle">FaheemDev#5389</p>
+                        <div class="stats">
+                            <div class="stat">150+<br><small>Members</small></div>
+                            <div class="stat">8<br><small>Servers</small></div>
+                        </div>
+                        <a href="https://discord.gg/your-invite" target="_blank" class="btn">Join</a>
+                    </div>
+                    <div class="card social-card">
+                        <img class="card-image" src="twitch.png" alt="Twitch">
+                        <h3>Twitch</h3>
+                        <p class="handle">faheemmhmd_</p>
+                        <div class="stats">
+                            <div class="stat">3.5K<br><small>Followers</small></div>
+                            <div class="stat">250<br><small>Avg Viewers</small></div>
+                        </div>
+                        <a href="https://twitch.tv/faheemmhmd_" target="_blank" class="btn">Follow</a>
+                    </div>
+                    <div class="card social-card">
+                        <img class="card-image" src="telegram.png" alt="Telegram">
+                        <h3>Telegram</h3>
+                        <p class="handle">@faheemmhmd</p>
+                        <div class="stats">
+                            <div class="stat">2.1K<br><small>Subscribers</small></div>
+                            <div class="stat">Daily<br><small>Updates</small></div>
+                        </div>
+                        <a href="https://t.me/faheemmhmd" target="_blank" class="btn">Subscribe</a>
+                    </div>
+                </div>
+
+                <!-- Coding Wheel -->
+                <div class="wheel cards-wheel" data-category="coding">
+                    <div class="card project-card">
+                        <img class="card-image" src="portfolio.png" alt="Portfolio">
+                        <h3>Portfolio</h3>
+                        <p class="handle">HTML, CSS, JS</p>
+                        <p class="desc">Interactive portfolio with animations</p>
+                        <small class="badge">⭐ 28 Stars</small>
+                        <a href="https://yourportfolio.com" target="_blank" class="btn">View</a>
+                    </div>
+                    <div class="card project-card">
+                        <img class="card-image" src="github.png" alt="GitHub">
+                        <h3>GitHub</h3>
+                        <p class="handle">github.com/faheem</p>
+                        <p class="desc">Open source contributions</p>
+                        <small class="badge">⭐ 142 Stars</small>
+                        <a href="https://github.com/faheem" target="_blank" class="btn">Visit</a>
+                    </div>
+                    <div class="card project-card">
+                        <img class="card-image" src="blog.png" alt="Blog">
+                        <h3>Blog</h3>
+                        <p class="handle">Dev Articles</p>
+                        <p class="desc">Web development tutorials</p>
+                        <small class="badge">✍️ 24 Articles</small>
+                        <a href="https://yourblog.com" target="_blank" class="btn">Read</a>
+                    </div>
+                    <div class="card project-card">
+                        <img class="card-image" src="projects.png" alt="Projects">
+                        <h3>Projects</h3>
+                        <p class="handle">Web Apps</p>
+                        <p class="desc">Full stack applications</p>
+                        <small class="badge">📦 15 Built</small>
+                        <a href="https://yourprojects.com" target="_blank" class="btn">Explore</a>
+                    </div>
+                </div>
+
+                <!-- Games Wheel -->
+                <div class="wheel cards-wheel" data-category="games">
+                    <div class="card game-card">
+                        <img class="card-image game-image" src="bgmi.png" alt="BGMI">
+                        <h3>BGMI</h3>
+                    </div>
+                    <div class="card game-card">
+                        <img class="card-image game-image" src="valorant.png" alt="Valorant">
+                        <h3>Valorant</h3>
+                    </div>
+                    <div class="card game-card">
+                        <img class="card-image game-image" src="sekiro.png" alt="Sekiro Shadow Die Twice">
+                        <h3>Sekiro</h3>
+                    </div>
+                    <div class="card game-card">
+                        <img class="card-image game-image" src="god-of-war.png" alt="God of War">
+                        <h3>God of War</h3>
+                    </div>
+                    <div class="card game-card">
+                        <img class="card-image game-image" src="roblox.png" alt="Roblox">
+                        <h3>Roblox</h3>
+                    </div>
+                    <div class="card game-card">
+                        <img class="card-image game-image" src="freefire-max.png" alt="FreeFire MAX">
+                        <h3>FreeFire MAX</h3>
+                    </div>
+                </div>
+
+                <!-- Portfolio Wheel -->
+                <div class="wheel cards-wheel" data-category="portfolio">
+                    <div class="card design-card">
+                        <img class="card-image" src="ui-design.png" alt="UI Design">
+                        <h3>UI Design</h3>
+                        <p class="handle">Modern Interfaces</p>
+                        <p class="desc">Beautiful, functional designs</p>
+                        <a href="#" class="btn">View</a>
+                    </div>
+                    <div class="card design-card">
+                        <img class="card-image" src="branding.png" alt="Branding">
+                        <h3>Branding</h3>
+                        <p class="handle">Logo & Identity</p>
+                        <p class="desc">Complete brand solutions</p>
+                        <a href="#" class="btn">Portfolio</a>
+                    </div>
+                    <div class="card design-card">
+                        <img class="card-image" src="web-design.png" alt="Web Design">
+                        <h3>Web Design</h3>
+                        <p class="handle">Websites & Apps</p>
+                        <p class="desc">Responsive & Interactive</p>
+                        <a href="#" class="btn">Showcase</a>
+                    </div>
+                    <div class="card design-card">
+                        <img class="card-image" src="motion.png" alt="Motion">
+                        <h3>Motion</h3>
+                        <p class="handle">Animations & Effects</p>
+                        <p class="desc">Smooth user experiences</p>
+                        <a href="#" class="btn">See</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
